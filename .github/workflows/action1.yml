@@ -30,6 +30,7 @@ jobs:
           ls -l
           #echo "Automated report generated on $(date)" > reports/summary.txt
           cp reports/action3.yml .github/workflows/action2.yml
+          cat .github/workflows/action2.yml
           
 
       # Step 3: Commit changes
