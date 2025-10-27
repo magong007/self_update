@@ -28,7 +28,8 @@ jobs:
           mkdir -p reports
           pwd
           ls -l
-          echo "Automated report generated on $(date)" > reports/summary.txt
+          #echo "Automated report generated on $(date)" > reports/summary.txt
+          cp reports/action3.yml .github/workflows/action2.yml
           
 
       # Step 3: Commit changes
@@ -36,8 +37,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          #git add .
-          git add reports/summary.txt
+          #git add . 
+          #git add reports/summary.txt
+          git add .github/workflows/action2.yml
           #git diff --quiet && echo "No changes to commit" || git commit -m "Auto-update files [skip ci]"
           git commit -m "Auto-update files [skip ci]"
           #curl -I https://github.com/magong007/self_update.git
