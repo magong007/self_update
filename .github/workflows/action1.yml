@@ -36,7 +36,7 @@ jobs:
           git add .
           git diff --quiet && echo "No changes to commit" || git commit -m "Auto-update files [skip ci]"
           curl -I https://github.com/magong007/self_update.git
-          #git push
+          git push
 
       # Step 4: Push changes
       #- name: Push changes
