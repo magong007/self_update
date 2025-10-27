@@ -3,6 +3,7 @@ name: Update files in current branch
 
 permissions:
   contents: write  # Needed for git push
+  
 on:
   workflow_dispatch:  # Manual trigger
   push:
